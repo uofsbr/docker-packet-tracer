@@ -18,6 +18,7 @@ RUN export uid=1000 gid=1000 \
   && dpkg-deb -Z xz -b /pt_package/ . \
   && dpkg -i /packettracer_7.3.0_amd64.deb \
   && rm -f /*.deb \
+  && rm -f /*packetTracer_730_amd64.deb \
   && rm -rf /pt_package \
   && chown ${uid}:${gid} -Rv /opt/pt
 

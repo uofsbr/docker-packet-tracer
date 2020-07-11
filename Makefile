@@ -12,11 +12,11 @@ build:
 
 run:
 	@mkdir -p ${STORAGE}
-	@docker run -ti --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v ${WORKDIR}/${STORAGE}:/home/pt/storage ${IMAGE}
+	@docker run -ti --rm --name packettracer -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v ${WORKDIR}/${STORAGE}:/home/pt/storage ${IMAGE}
 
 shell:
 	@mkdir -p ${STORAGE}
-	@docker run -ti --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v ${WORKDIR}/${STORAGE}:/home/pt/storage ${IMAGE} /bin/bash
+	@docker run -ti --rm --name packettracer -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v ${WORKDIR}/${STORAGE}:/home/pt/storage ${IMAGE} /bin/bash
 
 clean:
 	docker rmi ${IMAGE}

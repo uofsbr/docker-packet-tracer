@@ -2,8 +2,12 @@
 
 ### Description
 -------
-docker-pt is a container for cisco's packet tracer program. Packet tracer is automatically installed in a container and can be conveniently used from there.
-Prerequisite is an XServer, which is provided to the container as a volume. Furthermore a current installation of docker.
+docker-pt is a container for cisco's packet tracer program. Packet tracer is automatically installed
+in a container and can be conveniently used from there.
+Prerequisite:
+ - XServer (provided to the container as a volume); 
+ - Current installation of docker;
+ - Download PacketTracer_730_amd64.deb.
 
 ### Build
 **1. Get the repository**
