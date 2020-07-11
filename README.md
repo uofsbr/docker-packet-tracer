@@ -9,7 +9,7 @@ Prerequisite is an XServer, which is provided to the container as a volume. Furt
 **1. Get the repository**
 #### https
 ```https
-git clone https://github.com:frzifus/docker-pt.git
+git clone https://github.com:uofsbr/docker-packet-tracer.git
 ```
 
 **2. Navigate to the repo**
@@ -30,7 +30,3 @@ your docker daemon isn't authorized to use your local XServer session. Fix:
 ```
 xhost +local:docker
 ```
-
-### TODO
--------
-- Build a flatpak
